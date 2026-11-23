@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventBook — Create Account</title>
+  <link rel="stylesheet" href="css/register.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">Event<span>Book</span></a>
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="login.html">Log In</a>
+        <a href="register.html" class="btn btn-primary active">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="auth-wrapper">
+      <h1>Create an account</h1>
+      <p class="subtitle">Join EventBook to book tickets or organize events.</p>
+
+      <div id="registerAlert" class="alert"></div>
+
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input type="text" id="regName" required placeholder="Alex Mwiti" />
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">Email Address</label>
+          <input type="email" id="regEmail" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="regRole">Account Type</label>
+          <select id="regRole">
+            <option value="Attendee">Attendee (Book tickets)</option>
+            <option value="Organizer">Event Organizer (Host events)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="regPassword">Password (min 8 characters)</label>
+          <input type="password" id="regPassword" minlength="8" required placeholder="••••••••" />
+        </div>
+
+        <div class="form-group">
+          <label for="regConfirm">Confirm Password</label>
+          <input type="password" id="regConfirm" required placeholder="••••••••" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+      </form>
+
+      <p class="auth-footer">
+        Already have an account? <a href="login.html">Log in</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 EventBook. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

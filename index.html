@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Booking Platform – Home</title>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">EventBook</a>
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="events.html">Events</a>
+        <a href="login.html">LogIn</a>
+        <a href="register.html" class="btn btn-primary">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Discover and Book Live Events</h1>
+        <p>Find concerts, workshops, tech meetups, and community conferences near you.</p>
+        <form class="search-form" action="events.html" method="GET">
+          <input type="text" name="q" placeholder="Search events or cities..." aria-label="Search events" />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Upcoming Events</h2>
+          <a href="events.html">View all events &rarr;</a>
+        </div>
+
+        <div class="grid-3" id="featuredEventsGrid">
+          <!-- Event Card 1 -->
+          <article class="event-card">
+            <div class="event-card-image">
+              <img src="images/tech-meetup.jpg" alt="Nairobi Tech Meetup" />
+              <span class="event-badge">Tech</span>
+            </div>
+            <div class="event-card-body">
+              <p class="event-date">Sat, Dec 12 &bull; 10:00 AM</p>
+              <h3 class="event-title">Nairobi Tech Meetup 2026</h3>
+              <p class="event-location">iHub, Nairobi</p>
+              <div class="event-card-footer">
+                <span class="event-price">Free</span>
+                <a href="events.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event Card 2 -->
+          <article class="event-card">
+            <div class="event-card-image">
+              <img src="images/concert.jpg" alt="Live Acoustic Night" />
+              <span class="event-badge">Music</span>
+            </div>
+            <div class="event-card-body">
+              <p class="event-date">Fri, Dec 18 &bull; 7:00 PM</p>
+              <h3 class="event-title">Live Acoustic Night</h3>
+              <p class="event-location">Alliance Fran&ccedil;aise, Nairobi</p>
+              <div class="event-card-footer">
+                <span class="event-price">KES 1,000</span>
+                <a href="events.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Event Card 3 -->
+          <article class="event-card">
+            <div class="event-card-image">
+              <img src="images/workshop.jpg" alt="UI/UX Design Workshop" />
+              <span class="event-badge">Workshop</span>
+            </div>
+            <div class="event-card-body">
+              <p class="event-date">Sat, Dec 20 &bull; 9:30 AM</p>
+              <h3 class="event-title">UI/UX &amp; Frontend Workshop</h3>
+              <p class="event-location">Nairobi Garage, Westlands</p>
+              <div class="event-card-footer">
+                <span class="event-price">KES 500</span>
+                <a href="events.html" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Account Call to Action -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to get started?</h2>
+          <p>Create an account in seconds to reserve tickets or publish your own events.</p>
+          <div class="cta-actions">
+            <a href="register.html" class="btn btn-primary">Create Account</a>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 EventBook. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
